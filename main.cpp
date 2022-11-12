@@ -34,9 +34,9 @@ bool leap_years(int y)
 int num_days_years(int y1, int y2)
 {
  int days_per_years = 0;
- for (int i = y1; i < y2; i++)
+ for (int days = y1; days < y2; days++)
  {
-     if (leap_years(i)) days_per_years +=366;
+     if (leap_years(days)) days_per_years +=366;
      else days_per_years +=365;
  }
  return days_per_years;
